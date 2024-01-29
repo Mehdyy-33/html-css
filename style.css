@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #8bb4ab, white);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.3em;
+}
+
+.second-body {
+    background: #e1e5e4;
+    max-width: 90%;
+    border-radius: 12px;
+    margin: 35px auto;
+    position: relative;
+    padding: 75px;
+    box-sizing: border-box; 
+}
+
+.logo-container {
+    position: absolute;
+    left: 5%;
+    top: 15px;
+}
+
+.logo-jordan {
+    width: 40%;
+    max-width: 250px; 
+}
+
+.logo-nike {
+    width: 90%;
+    max-width: 1000px; 
+    margin-left: 50px;
+}
+
+.shoes {
+    width: 30%;
+    max-width: 2000px; 
+    position: absolute;
+    right: 40%;
+    transform: rotate(340deg);
+    bottom: 25%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+}
+
+.text-under-navbar {
+    position: absolute;
+    top: 120px;
+    left: 32%;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+.air,
+.jordan {
+    margin: 0 10px;
+}
+
+.nike {
+    color: white;
+}
+
+.air {
+    color: #30c4bb;
+    margin: 0;
+}
+
+.air-jordan-container {
+    display: flex;
+}
+
+.social-media {
+    transform: rotate(270deg);
+    position: absolute;
+    left: 80%;
+    bottom: 50%;
+    font-size: 0.9em;
+}
+
+.carroussel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    max-width: 90%; 
+}
+
+.carroussel-image {
+    width: 120px;
+    margin-bottom: 27px;
+    flex-shrink: 0; 
+}
+
+.carroussel-text {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    flex-shrink: 0; 
+}
+
+.carroussel-text::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    width: 3px;
+    left: 40%;
+    height: 50%;
+    background-color: black;
+    border-radius: 25%;
+}
+
+.rectangle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fleche-gauche,
+.fleche-droite {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fleche-gauche {
+    left: -50px;
+}
+
+.fleche-droite {
+    right: -50px;
+}
+
+.horizontal-points {
+    position: absolute;
+    display: flex;
+    left: 80%;
+    bottom: 20%;
+}
+
+.point {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-right: 5px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 25px;
+}
+
+.point-1 {
+    width: 15px;
+    height: 15px;
+    background-color: #30c4bb;
+    margin-right: 5px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 25px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .logo-container {
+        left: 3%;
+    }
+
+    .logo-nike {
+        width: 60%;
+    }
+
+    .shoes {
+        width: 30%;
+        max-width: 180px;
+        bottom: 15%;
+    }
+
+    .navbar {
+        top: 30px;
+    }
+
+    .text-under-navbar {
+        top: 120px;
+    }
+    .carroussel-image {
+        width: 100px; 
+    }
+
+    .carroussel-text {
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+    .social-media {
+        left: 70%; 
+        bottom: 40%; 
+        transform: rotate(0deg); 
+    }
+
+    .horizontal-points {
+        left: 70%; 
+        bottom: 10%; 
+    }
+
+    .point,
+    .point-1 {
+        width: 10px; 
+        height: 10px; 
+        margin-right: 3px; 
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .logo-container {
+        left: 2%;
+    }
+
+    .logo-jordan {
+        width: 15%;
+    }
+
+    .logo-nike {
+        width: 70%;
+        max-width: 250px;
+        margin-left: 10px;
+    }
+
+    .shoes {
+        width: 40%;
+        max-width: 150px;
+        right: 20%;
+        bottom: 10%;
+    }
+
+    .navbar {
+        top: 20px;
+    }
+
+    .text-under-navbar {
+        top: 100px;
+    }
+
+    .carroussel-text {
+        padding-left: 50px;
+    }
+    .carroussel-image {
+        width: 80px; 
+    }
+
+    .carroussel-text {
+        padding-left: 5px; 
+        padding-right: 5px; 
+    }
+
+    .social-media {
+        left: 60%; 
+        bottom: 30%; 
+    }
+
+    .horizontal-points {
+        left: 60%; 
+        bottom: 5%; 
+    }
+
+    .point,
+    .point-1 {
+        width: 8px; 
+        height: 8px; 
+        margin-right: 2px; 
+    }
+
+}
